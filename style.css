@@ -1,0 +1,73 @@
+body {
+    height: 100vh;
+    background-color: rgb(18, 73, 151);
+}
+
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(37, 37, 39, 0.856);
+    padding: 15px;
+    border-radius: 15px;
+    width: 20%;
+    color: white;
+    box-shadow: 0 0 30px rgba(36, 34, 34, 0.3);
+}
+
+fieldset{
+    border: 2px solid rgb(25, 86, 172);
+}
+
+legend{
+    border: 1px solid rgb(14, 47, 94);
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(25, 86, 172);
+    border-radius: 8px;
+}
+
+.inputBox{
+    position: relative;
+}
+
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgb(25, 86, 172);
+    outline: none;
+    font-size: 15px;
+    width: 100%;
+    color: white;
+}
+
+.labelInput{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput{
+    top: -20px;
+    font-size: 12px;
+    color: rgb(62, 139, 247);
+}
+
+#btn{
+    background-color: rgb(25, 86, 172);
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#btn:hover{
+    background-color: rgb(14, 47, 94);
+}
