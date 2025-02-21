@@ -71,3 +71,8 @@ legend{
 #btn:hover{
     background-color: rgb(14, 47, 94);
 }
+
+.erro{
+    color: red;
+    font-size: 12px;
+}

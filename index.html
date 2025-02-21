@@ -15,39 +15,48 @@
                 <legend>Formulário de cadastro</legend>
                 <br><br>
                 <div class="inputBox">
-                    <input type="text" name="nome" id="nome" class="inputUser" maxlength="60" minlength="5" required>
+                    <input type="text" name="nome" id="nome" class="inputUser" maxlength="60">
                     <label for="nome" class="labelInput">Nome</label>
+                    <div class="erro"><span id="mensagem-erro-nome"></span></div>
                 </div>
                 <br><br>
                 <div class="inputBox">
-                    <input type="email" name="nome" id="nome" class="inputUser" maxlength="100" minlength="5" required>
-                    <label for="nome" class="labelInput">Email</label>
+                    <input type="email" name="nome" id="email" class="inputUser" maxlength="100">
+                    <label for="nome" class="labelInput">E-mail</label>
+                    <div class="erro"><span id="mensagem-erro-email"></span></div>
                 </div>
                 <br><br>
                 <div class="inputBox">
-                    <input type="password" name="nome" id="nome" class="inputUser" maxlength="60" minlength="8" required>
+                    <input type="password" name="nome" id="senha" class="inputUser" maxlength="60">
                     <label for="nome" class="labelInput">Senha</label>
+                    <div class="erro"><span id="mensagem-erro-senha"></span></div>
                 </div>
                 <br><br>
                 <div class="inputBox">
-                    <input type="password" name="nome" id="nome" class="inputUser" maxlength="60" minlength="8" required>
+                    <input type="password" name="nome" id="confirmar_senha" class="inputUser" maxlength="60">
                     <label for="nome" class="labelInput">Confirmar Senha</label>
+                    <div class="erro"><span id="mensagem-erro-confSenha"></span></div>
                 </div>
                 <br><br>
                 <div class="inputBox">
-                    <input type="text" name="nome" id="nome" class="inputUser" maxlength="30" minlength="2" required>
+                    <input type="text" name="nome" id="cidade" class="inputUser" maxlength="30">
                     <label for="nome" class="labelInput">Cidade</label>
+                    <div class="erro"><span id="mensagem-erro-cidade"></span></div>
                 </div>
                 <br><br>
                 <div class="inputBox">
-                    <input type="text" name="nome" id="nome" class="inputUser" maxlength="2" minlength="2" required>
+                    <input type="text" name="nome" id="estado" class="inputUser" maxlength="2">
                     <label for="nome" class="labelInput">Estado</label>
+                    <div class="erro"><span id="mensagem-erro-estado"></span></div>
                 </div>
                 <br><br>
                 <input type="submit" id="btn" value="Cadastrar">
             </fieldset>
         </form>
     </div>
+
+    <script src="https://gutoffline.github.io/cadastro-usuario/funcoes.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
