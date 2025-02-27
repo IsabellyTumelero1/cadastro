@@ -40,6 +40,11 @@ document.getElementById("senha").addEventListener("blur", function () {
         fnAdicionarMensagemDeErro("mensagem-erro-senha", "* No mínimo 8 caracteres");
     }
 
+    let confSenhaigual = fnValidarSenhaIgual(this.value);
+    if(confSenhaigual == false){
+        fnAdicionarMensagemDeErro("mensagem-erro-confSenha", "* Senha incompatível");
+    }
+
     let senhaobrigatoria = fnValidarCampoObrigatorio(this.value);
     if(senhaobrigatoria == false){
         fnAdicionarMensagemDeErro("mensagem-erro-senha", "* Campo obrigatório");
@@ -59,6 +64,11 @@ document.getElementById("senha").addEventListener("blur", function () {
 document.getElementById("confirmar_senha").addEventListener("blur", function () {
     fnAdicionarMensagemDeErro("mensagem-erro-confSenha", "limpar");
 
+    let confSenhaigual = fnValidarSenhaIgual(this.getElementById("senha").value);
+    if(confSenhaigual == false){
+        fnAdicionarMensagemDeErro("mensagem-erro-confSenha", "* Senha incompatível");
+    }
+
     let confSenhavalida = fnValidarMinimoDeCaracteres(8, this.value)
     if (confSenhavalida == false) {
         fnAdicionarMensagemDeErro("mensagem-erro-confSenha", "* No mínimo 8 caracteres");
@@ -69,10 +79,6 @@ document.getElementById("confirmar_senha").addEventListener("blur", function () 
         fnAdicionarMensagemDeErro("mensagem-erro-confSenha", "* Campo obrigatório");
     }
 
-    let confSenhaigual = fnValidarSenhaIgual(this.value);
-    if(confSenhaigual == false){
-        fnAdicionarMensagemDeErro("mensagem-erro-confSenha", "* Senha incompatível");
-    }
 })
 
 document.getElementById("cidade").addEventListener("blur", function () {
