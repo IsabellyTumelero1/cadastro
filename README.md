@@ -49,5 +49,3 @@ function fnValidarMinimoDeCaracteres(minimo_de_caracteres , valor_do_campo)
 ```
 
 [GitHub](https://github.com/IsabellyTumelero1)
-
-![Imagem ilustrativa](./amigos.jpg)
